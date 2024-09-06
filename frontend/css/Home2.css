@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-image: url(../images/ai_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 11% 84% 1fr;
+}
+
+/* header  */
+.header {
+    height: fit-content;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+
+}
+
+.logo-icon {
+    position: relative;
+    width: fit-content;
+    margin-left: 35px;
+    top: -19px;
+}
+
+.logo-icon::after {
+    content: '';
+    display: inline-block;
+    background: #1e90ff;
+    width: 0.5px;
+    height: 3.9em;
+    position: absolute;
+    top: -12px;
+    left: 65px;
+}
+
+.logo-icon i {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+}
+
+.LS-button {
+    margin-right: 30px;
+    display: flex;
+}
+
+.LS-button a:first-child {
+    margin-right: 20px;
+}
+
+.LS-button a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: math;
+    font-weight: 800;
+    color: white;
+    border: 2px solid transparent;
+    background: #1e90ff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3em 1em 0 rgba(30, 143, 255, 0.35);
+    transition: 0.3s;
+}
+
+.LS-button a:hover {
+    background: rgb(65, 183, 79);
+    box-shadow: 0 0.3em 1em 0 rgb(65, 183, 79);
+}
+
+
+
+/* body  */
+
+.body {
+    display: grid;
+    grid-template-rows: 40% 1fr;
+}
+
+.pbody {
+    padding: 25px 40px;
+}
+
+.logo-icon2 {
+    position: relative;
+    text-align: center;
+}
+
+.logo-icon2 i {
+    font-size: 35px;
+}
+
+.h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.h1 h1 {
+    font-family: fangsong;
+    font-weight: 800;
+    color: black;
+}
+
+.h1 p {
+    opacity: 0.5;
+}
+
+
+.catagories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(11.25rem, 100%), 1fr));
+    grid-gap: 1rem;
+    padding: 5px 140px;
+}
+
+/* classic */
+
+.classic {
+    background-image: url(../images/classic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s;
+    border-radius: 20px;
+    padding: 10px 20px 0px 20px;
+    display: grid;
+    grid-template-rows: 20% 50% 1fr;
+}
+
+.classic:hover {
+    filter: drop-shadow(0px 0px 10px green);
+}
+
+.classic div:nth-child(1) {
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.classic div:nth-child(2) {
+    font-size: 15px;
+}
+
+.classic div:nth-child(3) a button {
+    text-decoration: none;
+    color: black;
+    padding: 9px 12px;
+    border-radius: 20px;
+    background-color: #55a197;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+.classic div:nth-child(3) a:hover button {
+    background-color: #209486;
+}
+
+/* intelligent */
+
+.Intelligent {
+    background-image: url(../images/Intelligent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 20px 0px 20px;
+    display: grid;
+    grid-template-rows: 20% 50% 1fr;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.Intelligent:hover {
+    filter: drop-shadow(0px 0px 10px rgb(0, 153, 255));
+
+}
+
+.Intelligent div:nth-child(1) {
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.Intelligent div:nth-child(2) {
+    font-size: 15px;
+}
+
+.Intelligent div:nth-child(3) a button {
+    text-decoration: none;
+    color: black;
+    padding: 9px 12px;
+    border-radius: 20px;
+    background-color: #03A9F4;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.Intelligent div:nth-child(3) a:hover button {
+    background-color: #036bf4b9;
+}
+
+/* footer  */
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+    .h1 {
+        margin-top: 15px;
+    }
+
+    .h1 h1 {
+        margin: 0;
+    }
+
+    .catagories {
+        padding: 5px 20px;
+    }
+}
+
+/* For screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    .Intelligent div:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .classic div:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .pbody {
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 376px) {
+
+    html,
+    body {
+        height: auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: 11% 77% 1fr;
+    }
+
+    .classic {
+        padding-bottom: 10px;
+    }
+
+    .Intelligent {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 321px) {
+    .LS-button {
+        margin-right: 10px;
+    }
+}

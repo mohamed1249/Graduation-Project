@@ -1,0 +1,491 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    background-image: url(../images/classic-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1%;
+}
+
+/* left */
+
+.left {
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.logo img {
+    width: 35px;
+}
+
+.left .head h1 {
+    font-weight: 800;
+}
+
+.left .content ul {
+    list-style: none;
+}
+
+.left .content ul li {
+    margin-bottom: 5%;
+    width: fit-content;
+}
+
+.left .content ul li a{
+    text-decoration: none;
+}
+
+.left .content ul li a p {
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: #b4e3e0;
+    text-align: center;
+    color: black;
+    transition: 0.3s;
+}
+
+.left .content ul li a p:hover {
+    background: black;
+    color: #b4e3e0;
+}
+
+.left .content ul li a p:focus {
+    background: black;
+    color: #b4e3e0;
+}
+
+
+
+
+
+
+/* right */
+
+.right {
+    background: linear-gradient(to right bottom, #70e6de, white, #70e6de);
+    overflow-y: auto;
+    height: 100%;
+    padding: 20px 30px;
+    transition: 0.4s;
+    border-radius: 2em;
+}
+
+.right .Hyperactivity h1 {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+.Hyperactivity {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+
+.Hyperactivity .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Hyperactivity .content h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.Hyperactivity .content ol li {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.Hyperactivity .content2 {
+    margin-top: 20px;
+}
+
+.Hyperactivity .content2 h3 {
+    font-weight: 800;
+    color: red;
+    margin-bottom: 5px;
+}
+
+.Hyperactivity .content2 p {
+    font-size: 20px;
+}
+
+.Hyperactivity .content3 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Hyperactivity .content3 img {
+    width: 80%;
+    height: 250px;
+}
+
+/* Anxiety */
+.Anxiety h1 {
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+.Anxiety .content h2 {
+    margin-bottom: 5px;
+    color: red;
+    font-size: 30px;
+}
+
+.Anxiety .content p {
+    font-size: 20px;
+}
+
+.Anxiety .content2 {
+    margin-top: 20px;
+}
+
+.Anxiety .content2 h2 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.Anxiety .content2 ol li {
+    margin-left: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.Anxiety .content3 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Anxiety .content3 img {
+    width: 70%;
+    height: 250px;
+}
+
+.Anxiety {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+/* Autism */
+
+.Autism h1 {
+    font-weight: 800;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    padding-bottom: 10px;
+}
+
+.Autism .content {
+    font-size: 20px;
+}
+
+.Autism .content ol h2 {
+    color: red;
+    font-weight: 800;
+}
+
+.Autism .content ol li {
+    margin-left: 25px;
+}
+
+.Autism .content2 {
+    margin-top: 30px;
+}
+
+.Autism .content2 ol h2 {
+    color: red;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.Autism .content2 ol li {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.Autism .content3 {
+    margin-top: 30px;
+}
+
+
+.Autism .content3 h2 {
+    color: red;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+
+.Autism .content3 p {
+    font-size: 20px;
+}
+
+.Autism .content4 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Autism .content4 img {
+    width: 70%;
+    height: 380px;
+}
+
+.Autism {
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
+
+/* Schizophrenia */
+
+.Schizophrenia {
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
+.Schizophrenia h1 {
+    font-weight: 800;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.Schizophrenia .content p {
+    font-size: 20px;
+}
+
+.Schizophrenia .content p span {
+    font-size: 25px;
+    font-weight: 800;
+    color: red;
+}
+
+.Schizophrenia .content2 {
+    margin-top: 20px;
+}
+
+.Schizophrenia .content2 ol h2 {
+    color: red;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.Schizophrenia .content2 ol li {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.Schizophrenia .content3 {
+    margin-top: 20px;
+}
+
+.Schizophrenia .content3 ol h2 {
+    color: red;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.Schizophrenia .content3 ol li {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.Schizophrenia .content4 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Schizophrenia .content4 img {
+    width: 70%;
+    height: 380px;
+}
+
+.content-b {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.content-b a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background-color: #b4e3e0;
+    font-weight: 800;
+    transition: 0.4s;
+}
+
+.content-b a:hover {
+    color: #b4e3e0;
+    background-color: black;
+}
+
+
+/* Obsessive */
+
+.Obsessive {
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
+.Obsessive h1 {
+    font-weight: 800;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.Obsessive .content p {
+    font-size: 20px;
+}
+
+.Obsessive .content p span {
+    color: red;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.Obsessive .content2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Obsessive .content2 ol h2 {
+    color: red;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.Obsessive .content2 p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.Obsessive .content2 li span {
+    color: red;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.Obsessive .content2 li {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.Obsessive .content3 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Obsessive .content3 img {
+    width: 70%;
+    height: 380px;
+}
+
+
+/* Down's */
+
+.Down {
+    margin-top: 30px;
+}
+
+.Down h1 {
+    font-weight: 800;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.Down .content p span {
+    color: red;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.Down .content p {
+    font-size: 20px;
+}
+
+.Down .content2 {
+    margin-top: 25px;
+}
+
+.Down .content2 ol h2 {
+    margin-bottom: 10px;
+    color: red;
+    font-weight: 800;
+}
+
+.Down .content2 ol li {
+    margin-left: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Down .content3 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Down .content3 img {
+    width: 65%;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:1025px) {
+    .container {
+        padding: 45px 24px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        grid-template-columns: 35% 65%;
+        padding: 25px 25px;
+    }
+} */

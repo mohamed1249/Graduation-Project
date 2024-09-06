@@ -1,0 +1,388 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #00BCD4, #ffffff, #00BCD4);
+}
+
+.container {
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+
+/* left side */
+.left {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/ai_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-name {
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-name i {
+    font-size: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-name h4 {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Rubik;
+}
+
+.text {
+    margin: 18% 10% 0;
+    text-align: center;
+    color: #03A9F4;
+    text-shadow: 2px 4px 15px lightgray;
+}
+
+.text h5 {
+    font-family: Roboto Mono;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.text div h1 {
+    font-size: 37px;
+    letter-spacing: 5px;
+    margin-bottom: 6px;
+    font-family: Roboto Mono;
+}
+
+.text div::after {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 5px;
+    background: #03A9F4;
+    box-shadow: 1px 2px 3px lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.text h6 {
+    font-size: 12px;
+}
+
+
+/* rigt side */
+.right {
+    width: 50%;
+    height: 100%;
+    background: white;
+}
+
+.right-h {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 62px;
+    text-align: center;
+}
+
+.right-h h1 {
+    font-size: 23px;
+    color: #03A9F4;
+    text-shadow: 3px 3px 3px lightgray;
+    font-family: 'Roboto Mono';
+}
+
+.right-h h5 {
+    color: gray;
+    opacity: 0.5;
+    font-family: 'Roboto Mono';
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+
+form {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .form-group input {
+    padding: 8px;
+    border: none;
+    border-left: 4px solid #03A9F4;
+    background: #e5e5e5;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+form .form-group input:focus {
+    box-shadow: 5px 3px 15px gray;
+    outline: none;
+    border-left-color: rgb(0, 198, 0);
+}
+
+form .form-group-checkbox {
+    width: 193px;
+    margin-bottom: 15px;
+}
+
+form .form-group-checkbox label {
+    text-decoration: none;
+    font-size: 14px;
+    text-shadow: 2px 1px 3px lightgray;
+    font-family: emoji;
+    letter-spacing: 1px;
+}
+
+form .form-group-checkbox input:checked+label {
+    transition: 0.3s;
+    color: #03A9F4;
+}
+
+form .form-group-checkbox input:not(checked)+label {
+    transition: 0.3s;
+    color: black;
+}
+
+form .form-group-forget {
+    margin-bottom: 20px;
+    width: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+form .form-group-forget a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    text-shadow: 2px 1px 3px lightgray;
+    font-family: 'Roboto Mono';
+    transition: 0.3s;
+}
+
+form .form-group-forget a:hover {
+    color: #03A9F4;
+}
+
+form .form-group-button button {
+    padding: 10px;
+    width: 185px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    font-family: cursive;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    background: #03A9F4;
+    color: white;
+    font-weight: 800;
+    box-shadow: 0 6px var(--box-shadow-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form .form-group-button button:hover {
+    background: rgb(65, 183, 79);
+    border: 2px solid rgb(65, 183, 79);
+
+}
+
+form p {
+    font-size: 14px;
+    color: black;
+    text-shadow: 3px 3px 3px lightgray;
+    font-family: cursive;
+}
+
+form p a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    transition: 0.4s;
+}
+
+form p a:hover {
+    color: #03A9F4;
+}
+
+
+.additional {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Default styles */
+@media (max-width: 426px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom right, #00BCD4, #ffffff, #00BCD4);
+    }
+
+    .additional {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    .additional i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .additional h4 {
+        color: #03A9F4;
+    }
+}
+
+/* Media query for screens smaller than 767px */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        box-shadow: 5px 5px 15px black;
+    }
+
+    .right-h {
+        margin-top: 10px;
+    }
+
+    .right-h h1 {
+        font-size: 20px;
+    }
+
+    .form {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .form form input[type="email"],
+    .form form input[type="password"],
+    .form form button {
+        width: 100%;
+    }
+
+    .already {
+        text-align: center;
+    }
+}
+
+/* for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 85%;
+        height: 90%;
+    }
+}
+
+/* screens larger than 1023px */
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+        height: 80%;
+    }
+}

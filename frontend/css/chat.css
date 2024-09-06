@@ -1,0 +1,407 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* left side  */
+.left {
+    height: 100%;
+    width: 20%;
+    background: #79ccf2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.new-chat {
+    margin-top: 25px;
+}
+
+.new-chat button {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: fit-content;
+    justify-content: flex-start;
+    background: none;
+    padding: 10px;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.new-chat button i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #4db2fe;
+}
+
+.new-chat button h3 {
+    font-size: 15px;
+    font-family: "Cambay", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.new-chat button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background: #1ab6ff;
+}
+
+.new-chat button:hover i {
+    transition: 0.3s;
+    color: white;
+}
+
+.history {
+    margin-bottom: 30px;
+}
+
+.history a {
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    background: #176eff;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.history a:hover{
+    background: none;
+    border-color: #176eff;
+    transform: scale(1.1);
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.history a span{
+    font-size: 20px;
+    margin-right: 5px;
+    animation: rotate 3s infinite;
+    animation-delay: 0.4s;
+}
+
+/* not */
+.new-chat button:not(hover) {
+    transition: 0.3s;
+}
+
+.new-chat button:not(hover) i {
+    transition: 0.3s;
+    color: #4db2fe;
+}
+
+
+
+
+
+
+
+
+/* right side  */
+.right {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header  */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background: white;
+    padding: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 19px;
+    font-family: sans-serif;
+    margin-left: 5%;
+    color: black;
+    font-family: "Cambay", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.versions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 43%;
+}
+
+.versions a {
+    margin: 0;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: #2196f394;
+    color: white;
+    font-size: 17px;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: none;
+}
+
+.versions a span{
+    margin-right: 5px;
+    animation: rotate 3s infinite;
+    animation-delay: 0.4s;
+}
+
+.versions a:hover {
+    background-color: transparent;
+    border: 2px solid #2195f3e9;
+    color: #2195f3e9;
+}
+
+.versions button {
+    border: none;
+    width: 45%;
+    padding: 7px 12px;
+    border-radius: 15px;
+    background-color: #5c96f7c2;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.versions select{
+    margin-right: 5px;
+}
+
+.version-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.VectorDB{
+    display: flex;
+}
+
+.VectorDB input{
+    margin-right: 5px;
+}
+
+.versions button:hover {
+    background-color: #4285f4;
+}
+
+.versions button:focus {
+    background-color: #4285f4;
+}
+
+
+
+/* body  */
+.body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-card {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.chat-body {
+    padding: 0% 17%;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.incoming {
+    background-color: #e1e1e1;
+}
+
+.outgoing {
+    background-color: #f2f2f2;
+    text-align: right;
+}
+
+.message p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.chat-footer {
+    padding: 0% 17%;
+    display: flex;
+}
+
+.chat-footer input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 23px;
+}
+
+.chat-footer input[type="text"]:focus {
+    outline: none;
+}
+
+.chat-footer button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4285f4;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-footer button:hover {
+    background-color: #0f9d58;
+}
+
+.chat-footer-p p {
+    text-align: center;
+    font-size: 13px;
+    font-family: cursive;
+}
+
+@keyframes chatAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-card .message {
+    animation: chatAnimation 0.3s ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0.1s;
+}
+
+.chat-card .message:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+.chat-card .message:nth-child(odd) {
+    animation-delay: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .header h2 {
+        font-size: 16px;
+    }
+
+    .body {
+        margin-top: 20px;
+    }
+
+    .chat-body {
+        padding: 0 5%;
+    }
+
+    .chat-footer {
+        padding: 0 5%;
+    }
+
+    .chat-footer input[type="text"] {
+        margin-right: 10px;
+    }
+
+    .chat-footer button {
+        padding: 5px 8px;
+    }
+
+    .versions {
+        width: 60%;
+    }
+
+    .versions a{
+        display: flex;
+    }
+}
+
+@media (width <=320px) {
+    .chat-footer-p p {
+        font-size: 10px;
+    }
+
+    .versions {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .versions button {
+        padding: 5px 7px;
+    }
+
+    .versions a{
+        display: initial;
+    }
+}
